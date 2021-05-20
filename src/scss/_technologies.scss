@@ -1,0 +1,253 @@
+.technologies {
+    background-color: #fff;
+    &-box {
+        margin-top: 80px;
+        background-color: #f5f5f6;
+        padding: 50px 80px 60px 80px;
+        position: relative;
+        z-index: 1;
+    }
+    &__title span {
+        font-family: "Muller Light";
+        font-style: normal;
+        letter-spacing: 0.09px;
+        line-height: normal;
+    }
+    &__title {
+        /* Style for "Кейсы" */
+        color: #202020;
+        font-family: "Muller Bold";
+        font-size: 4.2em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 47.25px;
+        text-align: left;
+        /* Text style for "Кейсы" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        margin-bottom: 60px;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        &--1 {
+            flex: 0.4;
+            /* Style for "Применяем" */
+            color: #202020;
+            font-family: "GT Eesti Pro Display";
+            font-size: 2.6em;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left;
+            /* Text style for "Применяем" */
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+        &--2 {
+            flex: 0.4;
+            /* Style for "Lorem ipsu" */
+            color: #454545;
+            font-family: "GT Eesti Pro Display";
+            font-size: 1.6em;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            /* Text style for "L, orem ip" */
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+    }
+    &__rectangle {
+        display: block;
+        width: 800px;
+        height: 20px;
+        margin: 40px auto;
+    }
+    // &__slider {
+    //   position: relative;
+    //   // overflow: hidden;
+    //   &__wrapper {
+    //     display: flex;
+    //     transition: transform 0.6s ease-out;
+    //   }
+    //   &__item {
+    //     object-fit: contain;
+    //     flex: 0 0 25%;
+    //     border: 1px solid whitesmoke;
+    //     background-color: #fff;
+    //     padding: 40px;
+    //   }
+    //   &__item > p > span {
+    //     font-size: 1.2em;
+    //     font-weight: 600;
+    //   }
+    //   &__item > p {
+    //     animation-name: mymove;
+    //     animation-duration: 1.2s;
+    //     margin-bottom: 0;
+    //     font-size: 1em;
+    //     margin-top: 20px;
+    //   }
+    //   &__control {
+    //     position: absolute;
+    //     top: 40%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 40px;
+    //     color: #fff;
+    //     text-align: center;
+    //     opacity: 0.5;
+    //     height: 40px;
+    //     transform: translateY(-50%);
+    //     border: 1px solid gray;
+    //     // background: rgba(0, 0, 0, .5);
+    //     border-radius: 50px;
+    //   }
+    //   &__control:hover,
+    //   &__control:focus {
+    //     color: #fff;
+    //     text-decoration: none;
+    //     outline: 0;
+    //     opacity: 0.9;
+    //     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    //   }
+    //   &__control_left {
+    //     left: -50px;
+    //   }
+    //   &__control_right {
+    //     right: -50px;
+    //   }
+    //   &__control::before {
+    //     content: "";
+    //     display: inline-block;
+    //     width: 20px;
+    //     height: 20px;
+    //     background: transparent no-repeat center center;
+    //     background-size: 100% 100%;
+    //   }
+    //   &__control_left::before {
+    //     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    //   }
+    //   &__control_right::before {
+    //     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    //   }
+    //   @keyframes mymove {
+    //     from {
+    //       opacity: 0.4;
+    //       transform: translateX(-100%);
+    //     }
+    //     to {
+    //       opacity: 1;
+    //       transform: translateX(0);
+    //     }
+    //   }
+    // }
+    &__laptop {
+        margin-top: -82px;
+        position: relative;
+        & img {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+        & button {
+            position: absolute;
+            top: 112px;
+            right: 86px;
+            width: 180px;
+            height: 45px;
+            box-shadow: 14px 0 24px rgba(112, 178, 247, 0.28);
+            border-radius: 6px;
+            background-color: #ffffff;
+            color: #010101;
+            font-family: "Muller Bold";
+            font-size: 1.5em;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 51.71px;
+            text-align: center;
+            text-transform: uppercase;
+            /* Text style for "Оставьте з" */
+            font-style: normal;
+            letter-spacing: 0.52px;
+            line-height: normal;
+            border: none;
+        }
+    }
+}
+
+//=============SLIDER===========================================//@at-root
+.technologies__slider {
+    position: relative;
+    // overflow: hidden;
+}
+
+.carousel-inner {
+    z-index: 2;
+}
+
+.carousel-item {
+    object-fit: contain;
+    border: 1px solid whitesmoke;
+    background-color: #fff;
+    // padding: 40px;
+}
+
+.item {
+    flex: 0 0 25%;
+    padding: 28px;
+    border: 1px solid whitesmoke;
+    & img {
+        margin-top: 20px;
+    }
+}
+
+.item>p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.item>p>span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.wrapp_card {
+    display: flex;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    text-align: center;
+    opacity: 0.5;
+    height: 40px;
+    transform: translateY(-50%);
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}

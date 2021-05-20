@@ -1,0 +1,109 @@
+.services {
+  background-color: #fff;
+  
+  
+  &-text {
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+    padding-top: 20px;
+
+    &__title span {
+      font-family: "Muller Light";
+      font-style: normal;
+      letter-spacing: 0.09px;
+      line-height: normal;
+    }
+
+    &__title {
+      /* Style for "Кейсы" */
+      color: #202020;
+      font-family: "Muller Bold";
+      font-size: 4.2em;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 47.25px;
+      text-align: left;
+      /* Text style for "Кейсы" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      flex: 0.3;
+    }
+
+    & p {
+      /* Style for "Применяем" */
+      color: #202020;
+      font-family: "GT Eesti Pro Display";
+      font-size: 1.6em;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 30px;
+      text-align: left;
+      /* Text style for "Применяем" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: 0;
+      flex: 0.7;
+    }
+  }
+
+  &__card {
+      margin-top: 40px;
+      padding: 40px 120px 40px 120px;
+    
+    
+      & h3 {
+      /* Style for "Продуктова" */
+      color: #ef5050;
+      font-family: "Muller Bold";
+      font-size: 4em;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 71.07px;
+      text-align: left;
+      /* Text style for "Продуктова" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: 40px;
+    }
+
+    & p {
+      /* Style for "Мы формиру" */
+      color: #202020;
+      font-family: "GT Eesti Pro Display";
+      font-size: 1.6em;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 30px;
+      text-align: left;
+      /* Text style for "Мы формиру" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: 80px;
+    }
+
+    & button {
+        display: contents;
+        margin-left: 60px;
+        
+        & img {
+            width: 40px;
+            height: 40px;
+            margin-left: 290px;
+        }
+    }
+  }
+}
+
+.disabled {
+    opacity: 0.2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
