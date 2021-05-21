@@ -1,0 +1,115 @@
+.cases {
+    margin-top: 150px;
+    z-index: 2;
+    position: relative;
+    &__wrap {
+        background-color: #ffffff;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding-left: 220px;
+        padding-top: 120px;
+        &__title>h2 {
+            color: #202020;
+            font-family: "GT Eesti Pro Display";
+            font-size: 55px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 47.25px;
+            text-align: left;
+        }
+        &__text>p {
+            color: #202020;
+            font-family: "GT Eesti Pro Display";
+            font-size: 2.2em;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left;
+            margin-left: -80px;
+        }
+        &__img>img {
+            margin-right: -110px;
+            margin-top: 15px;
+        }
+    }
+    &__woman {
+        position: absolute;
+        z-index: 1;
+        width: 95%;
+        top: 16%;
+        right: 2%;
+    }
+    &__box {
+        position: relative;
+        margin-bottom: 80px;
+        &__ya {
+            margin-left: 120px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            & a {
+                text-decoration: none;
+                color: #454545;
+                font-family: "GT Eesti Pro Display";
+                font-size: 1.6em;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 24px;
+                text-align: left;
+                margin-left: 20px;
+            }
+        }
+        &__info {
+            background-color: #fafafa;
+            width: 95%;
+            overflow: hidden;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            & h3 {
+                color: #202020;
+                font-family: "GT Eesti Pro Display";
+                font-size: 2.4em;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                z-index: 2;
+                position: relative;
+                margin-top: 60px;
+                margin-left: 40px;
+            }
+            & p {
+                color: #0f0000;
+                font-family: "GT Eesti Pro Display";
+                font-size: 1.6em;
+                font-weight: 600;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                z-index: 2;
+                position: relative;
+                margin-left: 40px;
+            }
+            & img {
+                z-index: 2;
+                position: relative;
+            }
+            & img:nth-child(odd) {
+                margin-left: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.laptop {
+    margin-top: -82px;
+    &__box {
+        position: relative;
+        & img {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+        & button {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            width: 180px;
+            height: 45px;
+            box-shadow: 14px 0 24px rgba(112, 178, 247, 0.28);
+            border-radius: 6px;
+            background-color: #ffffff;
+            color: #010101;
+            font-family: "Muller Bold";
+            font-size: 1.2em;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 51.71px;
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
+        }
+    }
+}

@@ -1,4 +1,3 @@
-// import video from '../video/video.mp4'
 import '../scss/styles.scss'
 
 

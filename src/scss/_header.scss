@@ -1,89 +1,84 @@
 .header {
     position: relative;
     width: 100%;
-    min-height: 85vh;
-    background-color: black;
+    min-height: 100vh;
     z-index: 2;
-    padding-bottom: 60px;
-    &__wrapper {
-        position: absolute;
-        width: 100%;
-        height: 54%;
-        background: url(../img/header_black.png) 90% 40% no-repeat fixed;
-        background-size: 100% 100%;
-        opacity: 0.3;
-        z-index: 3;
-        overflow: hidden;
-        #myVideo {
-            position: relative;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
-    }
-    &__images {
-        position: relative;
-        z-index: 4;
+    // padding-bottom: 120px;
+    &__nav {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        & img {
-            width: 100%;
-            // background-size: cover;
-        }
-        .bissines__img,
-        .sites__img {
-            margin-top: -260px;
-            // width: 100%;
-        }
-    }
-    &__img {
-        position: relative;
-    }
-    &__btn {
-        position: absolute;
-        top: 22%;
-        left: 44%;
-        width: 140px;
-        height: 40px;
-        box-shadow: 14px 0 24px rgba(112, 178, 247, 0.28);
-        border-radius: 6px;
-        background-color: #6b7df1;
-        /* Style for "Оставьте з" */
-        font-family: "Muller Bold";
-        font-size: 12px;
-        font-weight: 600;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: center;
-        text-transform: uppercase;
-        border: none;
-    }
-    &__btn a {
-        color: #fcfcfc;
-        text-decoration: none;
-    }
-    &__img>.header__arrow {
-        position: absolute;
-        top: 20%;
-        left: 40%;
-        width: 60px;
-        height: 45px;
-    }
-    &__footer {
-        position: relative;
-        margin-top: -198px;
-        text-align: center;
-        & h1 {
-            color: #ffffff;
-            font-size: 2.2em;
-            font-weight: 300;
+        margin-top: 40px;
+        &__title {
+            color: #030303;
+            font-family: "GT Eesti Pro Display";
+            font-size: 18px;
+            font-weight: 700;
             font-style: normal;
             letter-spacing: normal;
-            line-height: 51.2px;
-            text-align: center;
-            margin-top: 60px;
+            line-height: 21px;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        &__block>.navbar>a {
+            margin-right: 30px;
+            color: #1f1e1d;
+            font-family: "GT Eesti Pro Display";
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 70.62px;
+            text-align: left;
+            text-decoration: none;
+        }
+        &__left {
+            margin-top: 120px;
+            & h3 {
+                color: #000000;
+                font-family: "GT Eesti Pro Display";
+                font-size: 22px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 51.2px;
+                text-align: left;
+            }
+            & img {
+                position: absolute;
+                top: 55%;
+                left: 0;
+            }
+            & button {
+                width: 230px;
+                height: 60px;
+                box-shadow: 14px 0 24px rgba(112, 178, 247, 0.28);
+                border-radius: 6px;
+                background-color: #6b7df1;
+                border: none;
+                margin-top: 280px;
+                & a {
+                    width: 156px;
+                    height: 13px;
+                    color: #fcfcfc;
+                    font-family: "GT Eesti Pro Display";
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 55.91px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__right {
+            & img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
     }
 }
