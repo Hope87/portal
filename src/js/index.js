@@ -1,5 +1,24 @@
 import '../scss/styles.scss'
 
+// const WOW = require('wowjs');
+
+// window.wow = new WOW.WOW();
+// window.wow.init();
+
+(function scrollReveal() {
+    window.sr = ScrollReveal();
+
+    sr.reveal('section', {
+        duration: 1000,
+        distance: '40px',
+        easing: 'ease',
+        origin: 'bottom',
+        reset: true,
+        scale: 1,
+        viewFactor: 0,
+    }, 150);
+})();
+
 
 const myCarousel = document.querySelector('#slider_controls')
 const carousel = new bootstrap.Carousel(myCarousel, {
@@ -39,8 +58,11 @@ const asideText = (text) => {
 
     let currentTextItem = asideTextArr[stepsIndex - 1]
 
+
+
     currentTextItem.textContent = text
     currentTextItem.style.color = 'red'
+
 
 }
 
@@ -52,11 +74,14 @@ const asideTextOrigin = () => {
     let originTextItem = asideTextArr[stepsIndex]
 
 
+
+
     let originText = originTextArr[stepsIndex]
 
 
     originTextItem.textContent = originText
     originTextItem.style.color = 'black'
+
 
 }
 

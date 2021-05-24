@@ -1,14 +1,19 @@
 .header {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     z-index: 2;
-    // padding-bottom: 120px;
+    &__wrap {
+        background-image: url(../img/vector_wrap.png);
+        background-size: cover;
+    }
     &__nav {
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-top: 40px;
+        z-index: 1;
         &__title {
             color: #030303;
             font-family: "GT Eesti Pro Display";
@@ -31,6 +36,9 @@
             line-height: 70.62px;
             text-align: left;
             text-decoration: none;
+        }
+        &__block>.navbar>a:hover {
+            color: red;
         }
         &__left {
             margin-top: 120px;
@@ -78,6 +86,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
+                z-index: 0;
             }
         }
     }
