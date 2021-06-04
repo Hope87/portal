@@ -1,89 +1,80 @@
 .services {
-    background-color: #fff;
-    &__title {
-        display: flex;
-        align-items: center;
-        margin-left: 220px;
-        margin-top: 20px;
-        & h2 {
-            color: #202020;
-            font-family: "GT Eesti Pro Display";
-            font-size: 4.6em;
-            font-weight: 700;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 47.25px;
-            text-align: left;
-        }
+  background-color: #fff;
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+    margin-top: 20px;
+    & h2 {
+      color: #202020;
+      font-family: 'GT Eesti Pro Display';
+      font-size: 55px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 47.25px;
+      text-align: left;
     }
-    &__text {
-        margin-left: 180px;
-        margin-top: 20px;
-        display: flex;
-        & img {
-            height: 80px;
-            width: 14px;
-        }
-        & p {
-            margin-left: 40px;
-            margin-top: 5px;
-            color: #202020;
-            font-family: "GT Eesti Pro Display";
-            font-size: 2.2em;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            text-align: left;
-        }
+  }
+  &__text {
+    margin-left: 180px;
+    margin-top: 20px;
+    display: flex;
+    & img {
+      height: 80px;
+      width: 14px;
     }
-    &__card {
-        margin-top: 40px;
-        padding: 40px 120px 40px 120px;
-        & h3 {
-            /* Style for "Продуктова" */
-            color: #ef5050;
-            font-family: "Muller Bold";
-            font-size: 4em;
-            font-weight: 600;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 71.07px;
-            text-align: left;
-            /* Text style for "Продуктова" */
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            margin-bottom: 40px;
-        }
-        & p {
-            /* Style for "Мы формиру" */
-            color: #202020;
-            font-family: "GT Eesti Pro Display";
-            font-size: 1.6em;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 30px;
-            text-align: left;
-            /* Text style for "Мы формиру" */
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            margin-bottom: 80px;
-        }
-        & button {
-            display: contents;
-            margin-left: 60px;
-            & img {
-                width: 40px;
-                height: 40px;
-                margin-left: 290px;
-            }
-        }
+    & p {
+      margin-left: 70px;
+      margin-top: 5px;
+      color: #202020;
+      font-family: 'GT Eesti Pro Display';
+      font-size: 28px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: left;
     }
+  }
+  &__card {
+    margin-top: 40px;
+    padding: 40px 60px 40px 60px;
+    & h3 {
+      color: #ef5050;
+      font-family: 'GT Eesti Pro Display';
+      font-size: 46px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 71.07px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    & p {
+      color: #202020;
+      font-family: 'GT Eesti Pro Display';
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 30px;
+      text-align: left;
+      margin-bottom: 80px;
+    }
+    & button {
+      display: contents;
+      margin-left: 60px;
+      & img {
+        width: 76px;
+        height: 76px;
+        margin-left: 290px;
+      }
+    }
+  }
 }
 
 .disabled {
-    opacity: 0.2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
 }

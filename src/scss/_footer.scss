@@ -1,46 +1,47 @@
 .footer {
-    background-color: black;
-    &-box {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        display: flex;
-        align-items: center;
-        &__info {
-            flex: 0.4;
-            & p {
-                color: #ffffff;
-                font-family: "Cera Pro - Light";
-                font-size: 2.1em;
-                font-weight: 300;
-                font-style: normal;
-                letter-spacing: normal;
-                line-height: normal;
-            }
-            & span {
-                color: #ffffff;
-                font-size: 3.4em;
-                font-family: "Cera Pro - Bold";
-                font-weight: 700;
-                font-style: normal;
-                letter-spacing: normal;
-                line-height: normal;
-            }
-        }
-        &__text {
-            flex: 0.6;
-            color: #ffffff;
-            font-family: "Cera Pro";
-            font-size: 1.6em;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            text-align: left;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-        }
+  background-color: black;
+  &-box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    &__info {
+      flex: 0.4;
+      & p {
+        color: #ffffff;
+        font-family: 'GT Eesti Pro Display';
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+      & span {
+        color: #ffffff;
+        font-size: 34px;
+        font-family: 'GT Eesti Pro Display';
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+      }
     }
+    &__text {
+      flex: 0.6;
+      color: #ffffff;
+      font-family: 'GT Eesti Pro Display';
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+  }
 }
 
 // .fp-tableCell {
