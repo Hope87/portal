@@ -38,7 +38,7 @@ const carousel2 = new bootstrap.Carousel(myCarousel2, {
 
 //=========================================================//////
 
-// let controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: 50 } });
+// let controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: 30 } });
 
 // // build scenes
 // new ScrollMagic.Scene({ triggerElement: '#sec1' })
@@ -74,8 +74,22 @@ const btn = document.querySelector('.calc__back');
 const stepsCollection = document.querySelectorAll('.calc__step ');
 const stepsArr = Array.from(stepsCollection);
 const progressBarRange = document.querySelector('.progress-bar__range');
+const progressCurrentt = document.querySelector('.calc__progress-current');
 const asideTextCollection = document.querySelectorAll('.calc__project-text');
 const asideTextArr = Array.from(asideTextCollection);
+const test = document.querySelector('.technologies');
+
+window.addEventListener('scroll', function () {
+  let y = pageYOffset + 'px';
+
+  if (y > '583px') {
+    test.classList.add('none');
+  } else if (y > '1905px' && y < '582px') {
+    test.classList.remove('none');
+  }
+
+  console.log(y);
+});
 
 let stepsIndex = 0;
 const progressBarRangeStyleWidth = progressBarRange.style.width;
@@ -129,6 +143,8 @@ const steps = (function () {
 
       progressBarRange.style.width = progressBarRangeCurrentStyle;
 
+      progressCurrentt.textContent++;
+
       if (stepsIndex >= 1) {
         btn.classList.add('calc__back__style');
       }
@@ -155,6 +171,8 @@ btn.addEventListener('click', () => {
   progressBarRangeCurrentStyle = Number(progressBarRangeWidth) - 20 + '%';
 
   progressBarRange.style.width = progressBarRangeCurrentStyle;
+
+  progressCurrentt.textContent--;
 
   if (stepsIndex === 0) {
     btn.classList.remove('calc__back__style');
