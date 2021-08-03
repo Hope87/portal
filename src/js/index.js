@@ -1,28 +1,23 @@
 import '../scss/styles.scss';
 import '../fonts/stylesheet.css';
 
-// const WOW = require('wowjs');
+(function scrollReveal() {
+  window.sr = ScrollReveal();
 
-// window.wow = new WOW.WOW();
-// window.wow.init();
-
-// (function scrollReveal() {
-//   window.sr = ScrollReveal();
-
-//   sr.reveal(
-//     'section',
-//     {
-//       duration: 1000,
-//       distance: '40px',
-//       easing: 'ease',
-//       origin: 'bottom',
-//       reset: true,
-//       scale: 1,
-//       viewFactor: 0,
-//     },
-//     150
-//   );
-// })();
+  sr.reveal(
+    'section',
+    {
+      duration: 1000,
+      distance: '40px',
+      easing: 'ease',
+      origin: 'bottom',
+      reset: true,
+      scale: 1,
+      viewFactor: 0,
+    },
+    150
+  );
+})();
 
 const myCarousel = document.querySelector('#slider_controls');
 const carousel = new bootstrap.Carousel(myCarousel, {
@@ -36,38 +31,6 @@ const carousel2 = new bootstrap.Carousel(myCarousel2, {
   wrap: true,
 });
 
-//=========================================================//////
-
-// let controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: 30 } });
-
-// // build scenes
-// new ScrollMagic.Scene({ triggerElement: '#sec1' })
-//   .setClassToggle('#sec1', 'animate__fadeInUp') // add class toggle
-//   .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-// new ScrollMagic.Scene({ triggerElement: '#sec2' })
-//   .setClassToggle('#sec2', 'animate__fadeInUp') // add class toggle
-//   .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-// new ScrollMagic.Scene({ triggerElement: '#sec3' })
-//   .setClassToggle('#sec3', 'animate__fadeInUp') // add class toggle
-//   .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-// new ScrollMagic.Scene({ triggerElement: '#sec4' })
-//   .setClassToggle('#sec4', 'animate__fadeInUp') // add class toggle
-//   .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-// new ScrollMagic.Scene({ triggerElement: '#sec5' })
-//   .setClassToggle('#sec5', 'animate__fadeInUp') // add class toggle
-//   .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-// new ScrollMagic.Scene({ triggerElement: '#sec6' })
-//   .setClassToggle('#sec6', 'animate__fadeInUp') // add class toggle
-//   .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-
-//=========================================================//////
-
 const inputsCollection = document.querySelectorAll('.calc__item-radio');
 const inputs = Array.from(inputsCollection);
 const btn = document.querySelector('.calc__back');
@@ -77,19 +40,7 @@ const progressBarRange = document.querySelector('.progress-bar__range');
 const progressCurrentt = document.querySelector('.calc__progress-current');
 const asideTextCollection = document.querySelectorAll('.calc__project-text');
 const asideTextArr = Array.from(asideTextCollection);
-const test = document.querySelector('.technologies');
-
-window.addEventListener('scroll', function () {
-  let y = pageYOffset + 'px';
-
-  if (y > '583px') {
-    test.classList.add('none');
-  } else if (y > '1905px' && y < '582px') {
-    test.classList.remove('none');
-  }
-
-  console.log(y);
-});
+const technologies = document.querySelector('.technologies');
 
 let stepsIndex = 0;
 const progressBarRangeStyleWidth = progressBarRange.style.width;
