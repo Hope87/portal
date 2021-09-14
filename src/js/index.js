@@ -1,6 +1,16 @@
 import '../scss/styles.scss';
 import '../fonts/stylesheet.css';
 
+// console.log(document.querySelector('.burger'));
+
+document.querySelector('.burger').addEventListener('click', function() {
+  document.querySelector('.animated-icon1').classList.toggle('open');
+  document.querySelector('.header').classList.toggle('toggle-collapse');
+
+});
+
+
+
 (function scrollReveal() {
   window.sr = ScrollReveal();
 
@@ -129,3 +139,21 @@ btn.addEventListener('click', () => {
     btn.classList.remove('calc__back__style');
   }
 });
+
+
+
+// $(document).ready(function () {
+//
+//   $('.first-button').on('click', function () {
+//
+//     $('.animated-icon1').toggleClass('open');
+//   });
+//   $('.second-button').on('click', function () {
+//
+//     $('.animated-icon2').toggleClass('open');
+//   });
+//   $('.third-button').on('click', function () {
+//
+//     $('.animated-icon3').toggleClass('open');
+//   });
+// });

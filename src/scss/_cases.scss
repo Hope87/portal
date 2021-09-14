@@ -1,11 +1,15 @@
 .cases {
-  margin-top: 60px;
+  margin-top: 80px;
   z-index: 2;
   position: relative;
   &__wrap {
     background-color: #ffffff;
     padding-left: 60px;
     padding-right: 60px;
+    @media (max-width: 550px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   &__info {
     display: flex;
@@ -13,9 +17,17 @@
     align-items: stretch;
     padding-left: 140px;
     padding-top: 120px;
-    &__title > h2 {
+    @media (max-width: 1400px) {
+      padding-left: 0;
+      padding-top: 50px;
+    }
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    &__title {
       color: #202020;
-      font-family: 'GT Eesti Pro Display';
+      font-family: 'GT Eesti Pro Display', sans-serif;
       font-size: 55px;
       font-weight: 500;
       font-style: normal;
@@ -23,9 +35,9 @@
       line-height: 47.25px;
       text-align: left;
     }
-    &__text > p {
+    &__text {
       color: #202020;
-      font-family: 'GT Eesti Pro Display';
+      font-family: 'GT Eesti Pro Display', sans-serif;
       font-size: 26px;
       font-weight: 400;
       font-style: normal;
@@ -33,10 +45,19 @@
       line-height: 30px;
       text-align: left;
       margin-left: -80px;
+      @media (max-width: 1280px) {
+        margin-left: 35px;
+      }
+      @media (max-width: 991px) {
+        margin: 10px 0;
+      }
     }
-    &__img > img {
-      margin-right: -110px;
+    &__img {
+      margin-right: -105px;
       margin-top: 15px;
+      @media (max-width:1280px) {
+        margin-right: 0;
+      }
     }
   }
   &__woman {
@@ -55,10 +76,13 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
+      &:nth-child(0) {
+        margin-top: 0;
+      }
       & a {
         text-decoration: none;
         color: #454545;
-        font-family: 'GT Eesti Pro Display';
+        font-family: 'GT Eesti Pro Display', sans-serif;
         font-size: 16px;
         font-weight: 700;
         font-style: normal;
@@ -76,7 +100,7 @@
       padding-bottom: 20px;
       & h3 {
         color: #202020;
-        font-family: 'GT Eesti Pro Display';
+        font-family: 'GT Eesti Pro Display', sans-serif;
         font-size: 24px;
         font-weight: 700;
         font-style: normal;
@@ -90,7 +114,7 @@
       }
       & p {
         color: #0f0000;
-        font-family: 'GT Eesti Pro Display';
+        font-family: 'GT Eesti Pro Display', sans-serif;
         font-size: 17px;
         font-weight: 400;
         font-style: normal;
@@ -111,5 +135,10 @@
         margin-left: 40px;
       }
     }
+  }
+}
+.second__ya {
+  @media (max-width: 550px) {
+    margin-top: 0;
   }
 }

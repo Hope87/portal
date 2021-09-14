@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server  --open",
     "build": "webpack",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "start1": "webpack-dev-server  --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
